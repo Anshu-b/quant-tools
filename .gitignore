@@ -1,0 +1,34 @@
+cat > .gitignore <<'EOF'
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Generated/cache files
+*.log
+.cache/
+
+# Large/local data
+data/
+*.csv
+*.parquet
+*.duckdb
+
+# FinceptTerminal will be its own repository
+fincept-terminal/
+EOF
